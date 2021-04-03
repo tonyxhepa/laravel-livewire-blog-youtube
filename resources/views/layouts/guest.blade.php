@@ -12,7 +12,7 @@
 
         <!-- Styles -->
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
-
+        @livewireStyles
         <!-- Scripts -->
         <script src="{{ mix('js/app.js') }}" defer></script>
     </head>
@@ -21,5 +21,6 @@
         <div class="min-h-screen font-sans text-gray-900 antialiased dark:bg-gray-700">
             {{ $slot }}
         </div>
+        @livewireScripts
     </body>
 </html>
